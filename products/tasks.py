@@ -1,9 +1,4 @@
-from celery import shared_task
-import time
+# Celery completely disabled for this environment
 
-@shared_task
-def send_emails():   
-    for x in range(40):
-        time.sleep(1)
-        print(x)
-
+def send_emails(*args, **kwargs):
+    pass

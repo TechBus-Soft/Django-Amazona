@@ -27,8 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
-
+SECRET_KEY = "django-insecure-phone-dev-key-change-later-123456789"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG')
 
@@ -218,8 +217,8 @@ REST_FRAMEWORK = {
 # CELERY_BROKER_URL="redis://localhost:6380" ------------>run redis
 # CELERY_RESULT_BACKEND="redis://localhost:6380"
 
-CELERY_BROKER_URL="redis://redis:6379/0"            #--------> run docker
-CELERY_RESULT_BACKEND="redis://redis:6379/0"
+#CELERY_BROKER_URL="redis://redis:6379/0"            #--------> run docker
+#CELERY_RESULT_BACKEND="redis://redis:6379/0"
 
 
 # accounts
